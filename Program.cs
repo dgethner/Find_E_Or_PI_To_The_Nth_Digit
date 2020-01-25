@@ -43,11 +43,11 @@ namespace Find_E_To_The_Nth_Digit
                 {
                     return false;
                 }
-                else if (number == "q")
+                else if (number.ToLower() == "q")
                 {
                     return true;
                 }
-                else if (number == "s")
+                else if (number.ToLower() == "s")
                 {
                     return true;
                 }
@@ -70,11 +70,11 @@ namespace Find_E_To_The_Nth_Digit
                     Console.WriteLine("\nInput is invalid, please enter a postive number up to 9.\n");
                     startOverE();
                 }
-                else if (number == "s")
+                else if (number.ToLower() == "s")
                 {
                     startOverPi();
                 }
-                else if (number != "q")
+                else if (number.ToLower() != "q")
                 {
                     try
                     {
@@ -129,11 +129,11 @@ namespace Find_E_To_The_Nth_Digit
                     Console.WriteLine("\nInput is invalid, please enter a postive number up to 9.\n");
                     startOverPi();
                 }
-                else if (number == "s")
+                else if (number.ToLower() == "s")
                 {
                     startOverE();
                 }
-                else if (number != "q")
+                else if (number.ToLower() != "q")
                 {
                     try
                     {
