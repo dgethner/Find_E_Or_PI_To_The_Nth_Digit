@@ -22,7 +22,7 @@ or
 
 >Enter 'q' to quit the program"
 
-Once the user chooses between E or Pi, they can switch between the two(even without entering a number) by typing "s."
+Once the user chooses between E or Pi, they can switch between the two(even without entering a number) by typing "s".
 
 The user can also quit the program at anytime by typing "q".
 
