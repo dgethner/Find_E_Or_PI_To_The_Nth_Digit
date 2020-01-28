@@ -8,10 +8,14 @@ namespace Find_E_To_The_Nth_Digit
          {
             int numberEntered = Int32.Parse(number);
             int displayLength = numberEntered + 2;
-            Console.WriteLine($"\nYou entered the number {numberEntered}\n");
+            Console.WriteLine($"\nYou entered the number '{numberEntered}'\n");
             if (numberEntered == 0 || numberEntered == 1)
             {
-                Console.WriteLine("Please enter a number 2 or greater \n");
+                Console.WriteLine("Please enter a positive number '2' or greater \n");
+            }
+            else if (numberEntered > 14)
+            {
+                Console.WriteLine("Please enter a positive number '14' or lower \n");
             }
             else
             {
@@ -37,10 +41,14 @@ namespace Find_E_To_The_Nth_Digit
         {
             int numberEntered = Int32.Parse(number);
             int displayLength = numberEntered + 2;
-            Console.WriteLine($"\nYou entered the number {numberEntered}\n");
+            Console.WriteLine($"\nYou entered the number '{numberEntered}'\n");
             if (numberEntered == 0 || numberEntered == 1)
             {
-                Console.WriteLine("Please enter a number 2 or greater \n");
+                Console.WriteLine("Please enter a number '2' or greater \n");
+            }
+            else if (numberEntered > 14)
+            {
+                Console.WriteLine("Please enter a positive number '14' or lower \n");
             }
             else
             {

@@ -10,7 +10,7 @@ namespace Find_E_To_The_Nth_Digit
             string number = Console.ReadLine();
             if (!IsValid.isValidInput(number))
             {
-                Console.WriteLine("\nInput is invalid, please enter a postive number up to 14.\n");
+                Console.WriteLine("\nInput is invalid, please enter a postive number up to '14'.\n");
                 startOverE();
             }
             else if (number.ToLower() == "s")
@@ -41,7 +41,7 @@ namespace Find_E_To_The_Nth_Digit
             string number = Console.ReadLine();
             if (!IsValid.isValidInput(number))
             {
-                Console.WriteLine("\nInput is invalid, please enter a postive number up to 14.\n");
+                Console.WriteLine("\nInput is invalid, please enter a postive number up to '14'.\n");
                 startOverPi();
             }
             else if (number.ToLower() == "s")
