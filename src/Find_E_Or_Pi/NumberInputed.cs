@@ -15,17 +15,18 @@ namespace Find_E_To_The_Nth_Digit
             }
             else
             {
-                string eResult = Math.E.ToString().Substring(0, displayLength);
+                double eResult = Math.E;
+                string eConverted = eResult.ToString().Substring(0, displayLength);
                 switch (numberEntered)
                 {
                     case 2:
-                        Console.WriteLine($"E to the {numberEntered}nd digit is {eResult} \n");
+                        Console.WriteLine($"E to the {numberEntered}nd digit is {eConverted} \n");
                         break;
                     case 3:
-                        Console.WriteLine($"E to the {numberEntered}rd digit is {eResult} \n");
+                        Console.WriteLine($"E to the {numberEntered}rd digit is {eConverted} \n");
                         break;
                     default:
-                        Console.WriteLine($"E to the {numberEntered}th digit is {eResult} \n");
+                        Console.WriteLine($"E to the {numberEntered}th digit is {eConverted} \n");
                         break;
                 }
             }
@@ -43,17 +44,18 @@ namespace Find_E_To_The_Nth_Digit
             }
             else
             {
-                string PiResult = Math.PI.ToString().Substring(0, displayLength);
+                double PiResult = Math.PI;
+                string PiConverted = PiResult.ToString().Substring(0, displayLength);
                 switch (numberEntered)
                 {
                     case 2:
-                        Console.WriteLine($"Pi to the {numberEntered}nd digit is {PiResult} \n");
+                        Console.WriteLine($"Pi to the {numberEntered}nd digit is {PiConverted} \n");
                         break;
                     case 3:
-                        Console.WriteLine($"Pi to the {numberEntered}rd digit is {PiResult} \n");
+                        Console.WriteLine($"Pi to the {numberEntered}rd digit is {PiConverted} \n");
                         break;
                     default:
-                        Console.WriteLine($"Pi to the {numberEntered}th digit is {PiResult} \n");
+                        Console.WriteLine($"Pi to the {numberEntered}th digit is {PiConverted} \n");
                         break;
                 }
             }

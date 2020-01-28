@@ -10,7 +10,7 @@ namespace Find_E_To_The_Nth_Digit
             {
                 return false;
             }
-            else if (number.Length > 1)
+            else if (number.Length > 2)
             {
                 return false;
             }
