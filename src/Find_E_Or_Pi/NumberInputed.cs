@@ -9,7 +9,7 @@ namespace Find_E_To_The_Nth_Digit
             int numberEntered = Int32.Parse(number);
             int displayLength = numberEntered + 2;
             Console.WriteLine($"\nYou entered the number '{numberEntered}'\n");
-            if (numberEntered == 0 || numberEntered == 1)
+            if (numberEntered < 2)
             {
                 Console.WriteLine("Please enter a positive number '2' or greater. \n");
             }
@@ -42,7 +42,7 @@ namespace Find_E_To_The_Nth_Digit
             int numberEntered = Int32.Parse(number);
             int displayLength = numberEntered + 2;
             Console.WriteLine($"\nYou entered the number '{numberEntered}'\n");
-            if (numberEntered == 0 || numberEntered == 1)
+            if (numberEntered < 2)
             {
                 Console.WriteLine("Please enter a number '2' or greater. \n");
             }
