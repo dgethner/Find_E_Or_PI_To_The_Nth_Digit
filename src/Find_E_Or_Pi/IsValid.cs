@@ -4,27 +4,31 @@ namespace Find_E_To_The_Nth_Digit
 {  
     public class IsValid
     {
-        public static bool isValidInput(string number)
+        public virtual bool isValidInput(string valueEntered)
         {
-            if (number == null)
+            if (valueEntered == null)
             {
                 return false;
             }
-            else if (number.Length > 2)
+            else if (valueEntered.Length > 2)
             {
                 return false;
             }
-            else if (number.ToLower() == "q")
+            else if (valueEntered.ToLower() == "q")
             {
                 return true;
             }
-            else if (number.ToLower() == "s")
+            else if (valueEntered.ToLower() == "s")
             {
                 return true;
             }
-            else if (int.TryParse(number, out int n))
+            else if (int.TryParse(valueEntered, out int n))
             {
-                return true;
+                if (n >= 2 && n <= 14)
+                { 
+                    return true;
+                }
+                return false;
             }
             else
             {

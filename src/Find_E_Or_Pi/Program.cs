@@ -6,7 +6,8 @@ namespace Find_E_To_The_Nth_Digit
     {
         static void Main(string[] args)
         {
-            ChooseEOrPi.choose();
+            ChooseEOrPi choice = new ChooseEOrPi();
+            choice.getUserInput();
         }
     }
 }

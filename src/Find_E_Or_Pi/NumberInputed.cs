@@ -4,7 +4,8 @@ namespace Find_E_To_The_Nth_Digit
 {
     public class NumberInputed
     {
-         public static void numberInputedE(string number)
+        StartOver over = new StartOver();
+         public void numberInputedE(string number)
          {
             int numberEntered = Int32.Parse(number);
             int displayLength = numberEntered + 2;
@@ -34,17 +35,17 @@ namespace Find_E_To_The_Nth_Digit
                         break;
                 }
             }
-            StartOver.startOverE();
+            over.startOverE();
          }
 
-        public static void numberInputedPi(string number)
+        public void numberInputedPi(string number)
         {
             int numberEntered = Int32.Parse(number);
             int displayLength = numberEntered + 2;
             Console.WriteLine($"\nYou entered the number '{numberEntered}'\n");
             if (numberEntered < 2)
             {
-                Console.WriteLine("Please enter a number '2' or greater. \n");
+                Console.WriteLine("Please enter a positive number '2' or greater. \n");
             }
             else if (numberEntered > 14)
             {
@@ -67,7 +68,7 @@ namespace Find_E_To_The_Nth_Digit
                         break;
                 }
             }
-            StartOver.startOverPi();
+            over.startOverPi();
         }
     }
 }

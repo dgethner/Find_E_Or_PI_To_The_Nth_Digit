@@ -4,24 +4,30 @@ namespace Find_E_To_The_Nth_Digit
 {
     public class StartOver
     {
-        public static void startOverE()
+        public StartOver(){}
+
+        public virtual void startOverE()
         {
+            NumberInputed ni = new NumberInputed();
+            IsValid isValid = new IsValid();
+
             Console.WriteLine("\nEnter a positive number up to '14' and this program will generate E up to that many decimal places\nEnter 's' to switch to finding the Nth digit of Pi\nEnter 'q' to quit the program\n");
-            string number = Console.ReadLine();
-            if (!IsValid.isValidInput(number))
+            string number = userInputMethod();
+            number.ToLower();
+            if (!isValid.isValidInput(number))
             {
                 Console.WriteLine("\nInput is invalid, please enter a postive number up to '14'.\n");
                 startOverE();
             }
-            else if (number.ToLower() == "s")
+            else if (number == "s")
             {
                 startOverPi();
             }
-            else if (number.ToLower() != "q")
+            else if (number != "q")
             {
                 try
                 {
-                    NumberInputed.numberInputedE(number);
+                    ni.numberInputedE(number);
                 }
                 catch (System.FormatException)
                 {
@@ -35,11 +41,21 @@ namespace Find_E_To_The_Nth_Digit
             }
         }
 
-        public static void startOverPi()
+        public virtual string userInputMethod()
         {
-            Console.WriteLine("\nEnter a positive number up to '14' and this program will generate Pi up to that many decimal places\nEnter 's' to switch to finding the Nth digit of E\nEnter 'q' to quit the program\n");
             string number = Console.ReadLine();
-            if (!IsValid.isValidInput(number))
+            return number;
+        }
+
+        public virtual void startOverPi()
+        {
+            
+            NumberInputed ni = new NumberInputed();
+            IsValid isValid = new IsValid();
+
+            Console.WriteLine("\nEnter a positive number up to '14' and this program will generate Pi up to that many decimal places\nEnter 's' to switch to finding the Nth digit of E\nEnter 'q' to quit the program\n");
+            string number = userInputMethod();
+            if (!isValid.isValidInput(number))
             {
                 Console.WriteLine("\nInput is invalid, please enter a postive number up to '14'.\n");
                 startOverPi();
@@ -52,7 +68,7 @@ namespace Find_E_To_The_Nth_Digit
             {
                 try
                 {
-                    NumberInputed.numberInputedPi(number);
+                    ni.numberInputedPi(number);
                 }
                 catch (System.FormatException)
                 {
